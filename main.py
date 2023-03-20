@@ -28,6 +28,3 @@ if chant[-1] == " ":
 
 good_chant = " " != chant[-1]
 print(good_chant)
-print(chant)
-print(first_name)
-print(last_name_len)

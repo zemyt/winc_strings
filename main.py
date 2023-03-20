@@ -4,23 +4,21 @@ __human_name__ = 'strings'
 
 ### part 1 ###
 
-player1 = "Ruud Gullit"
-player2 = "Marco van Basten"
+player_1 = "Ruud Gullit"
+player_2 = "Marco van Basten"
 goal_0 = 32
 goal_1 = 54
 
-scorers = player1 + " " + str(goal_0) + ", " + player2 + " " + str(goal_1)
-report = f"{player1} scored in the {goal_0}nd minute\n{player2} scored in the {goal_1}th minute"
+scorers = player_1 + " " + str(goal_0) + ", " + player_2 + " " + str(goal_1)
+report = f"{player_1} scored in the {goal_0}nd minute\n{player_2} scored in the {goal_1}th minute"
 
 ### part 2 ###
 
 player = "Ronald Koeman"
 
-first_name = player[:6]
-first_name_2 = player[player.find("Ronald"):player.find(" ")]
+first_name = player[:player.find(" ")]
 
-last_name_len = len(player) - player.find("Koeman")
-last_name_len_2 = len(player[player.find("Koeman"):len(player)])
+last_name_len = len(player) - player.find(" ") - 1
 
 name_short = f"{player[0]}. {player[-last_name_len:]}"
 
@@ -30,3 +28,6 @@ if chant[-1] == " ":
 
 good_chant = " " != chant[-1]
 print(good_chant)
+print(chant)
+print(first_name)
+print(last_name_len)
